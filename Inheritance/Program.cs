@@ -29,11 +29,25 @@ namespace Inheritance
              * Creatively display the class member values 
              */
 
+            Bird b1 = new Bird() { Name = "Tweety", Species = "Tweety Bird",
+                Legs = 2, CanFly = true, Color = "yellow",
+                CanSpeak = true, FavoriteSaying = "I tawt I taw a puddy tat!" };
+
+            b1.Describe(b1);
+
+            Console.WriteLine();
+
             /*Create an object of your Reptile class
              *  give values to your members using the object of your Reptile class
              *  
              * Creatively display the class member values 
              */
+
+            Reptile r1 = new Reptile() { Name = "Martin", Species = "Gecko",
+                Legs = 4, Color = "green", Movement = "walk",
+                CanCamouflage = true, LaysEggs = true, TopSpeed = 30 };
+
+            r1.Describe(r1);
         }
     }
 }
